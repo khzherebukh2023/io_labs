@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#hero {
+    position: relative;
+    display: flex;
+    height: 500px;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgb(46, 49, 146);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero .shadow {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent 35%, rgb(37 39 117 / 90%));
+}
+
+.hero-content {
+    position: relative;
+    width: min(100% - 30px, 1100px);
+    margin: 0 auto;
+    padding-bottom: 48px;
+    text-align: center;
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 3.7vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+#hero a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 3s ease-out;
+}
+
+#hero a:hover,
+#hero a:focus-visible {
+    color: #00a1e4;
+}
+
+.shortcuts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.shortcut {
+    display: flex;
+    min-height: 130px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #30358f;
+    transition: color 0.25s ease-out;
+}
+
+.shortcut:nth-child(even) {
+    background: #252775;
+}
+
+.shortcut h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    font-size: clamp(1rem, 1.4vw, 1.25rem);
+    font-weight: 400;
+}
+
+.shortcut i {
+    color: #00a1e4;
+    font-size: 1em;
+}
+
+@media (min-width: 768px) {
+    .shortcuts {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .shortcut {
+        min-height: 125px;
+    }
+}
+
+@media (max-width: 767px) {
+    #hero {
+        height: 70vw;
+        min-height: 320px;
+        max-height: 420px;
+    }
+
+    .hero-content {
+        padding-bottom: 30px;
+    }
+}
