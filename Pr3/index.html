@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trivia Company</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#scores">Scores</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>World Trivia</h1>
+            <p>Welcome to World Trivia — your source for verified facts, quick brain workouts, and international quiz rankings. Whether you enjoy geography, tech, or ancient history, there is always a new challenge waiting.</p>
+        </section>
+
+        <section id="trivia">
+            <h2>Trivia</h2>
+            <div class="info-block">
+                <img src="img/antarctica.jpg" alt="">
+                <div>
+                    <h3>The Largest Desert</h3>
+                    <p>By definition, a desert is determined by low precipitation rather than temperature, which makes Antarctica the largest desert on Earth.</p>
+                </div>
+            </div>
+            <div class="info-block">
+                <img src="img/keyboard.jpg" alt="">
+                <div>
+                    <h3>First Computer Bug</h3>
+                    <p>In 1947, engineers working on the Harvard Mark II computer found an actual moth stuck in a relay and taped it into their logbook as the first real bug found.</p>
+                </div>
+            </div>
+            <div class="info-block">
+                <img src="img/lightning.jpg" alt="">
+                <div>
+                    <h3>Hotter Than the Sun</h3>
+                    <p>A single bolt of lightning can heat the surrounding air to roughly 30,000 degrees Celsius — five times hotter than the surface of the Sun.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#categories">Technology</a></li>
+                <li><a href="#categories">Astronomy</a></li>
+                <li><a href="#categories">Geography</a></li>
+                <li><a href="#categories">Biology</a></li>
+                <li><a href="#categories">Cinema</a></li>
+            </ul>
+        </section>
+
+        <section id="scores">
+            <h2>Scores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Country</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Taras</td>
+                        <td>960</td>
+                        <td>Ukraine</td>
+                        <td>Technology</td>
+                        <td>2025-05-08</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Hanna</td>
+                        <td>920</td>
+                        <td>Poland</td>
+                        <td>Astronomy</td>
+                        <td>2025-05-09</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Tomas</td>
+                        <td>885</td>
+                        <td>Lithuania</td>
+                        <td>Biology</td>
+                        <td>2025-05-10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="subscribe">
+            <h2>Subscribe</h2>
+            <p>Join thousands of readers getting a daily brain teaser straight to their inbox.</p>
+            <button type="button" class="puzzle-btn" aria-label="Subscribe to Puzzle of the Day">
+                Puzzle of the Day <span class="sr-text">Open subscription</span>
+            </button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Questions, suggestions, or partnership inquiries? Send us a note.</p>
+            <form action="#" method="post">
+                <label for="f-name">Name</label>
+                <input type="text" id="f-name" name="name" required>
+
+                <label for="f-email">Email</label>
+                <input type="email" id="f-email" name="email" required>
+
+                <label for="f-msg">Message</label>
+                <textarea id="f-msg" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 World Trivia Company</p>
+    </footer>
+</body>
+</html>
